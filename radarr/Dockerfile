@@ -21,7 +21,7 @@ apk add --no-cache \
   elif [ "${BUILD_ARCH}" = "amd64" ]; then RADARR_ARCH="x64"; fi \
   \
   && curl -J -L -o /tmp/radarr.tar.gz \
-      "https://github.com/Radarr/Radarr/releases/download/v${RADARR_VERSION}/Radarr.master.${RADARR_VERSION}.linux-musl-core-${RADARR_ARCH}.tar.gz" \
+      "https://github.com/Radarr/Radarr/releases/download/v${RADARR_VERSION}/Radarr.develop.${RADARR_VERSION}.linux-musl-core-${RADARR_ARCH}.tar.gz" \
   && mkdir -p /opt/bin \
   && tar zxvf \
       /tmp/radarr.tar.gz \
