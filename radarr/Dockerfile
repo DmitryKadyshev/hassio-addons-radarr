@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 ARG RADARR_VERSION=6.4.3.10645
 ARG BUILD_ARCH=amd64
-ARG BUILD_VERSION=dev
+ARG BUILD_VERSION=${RADARR_VERSION}
 ENV XDG_CONFIG_HOME="/config/xdg"
 # hadolint ignore=DL3003,DL3042
 RUN \
